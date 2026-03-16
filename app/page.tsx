@@ -95,7 +95,7 @@ export default function Home() {
               SpectralFlow SAS — <span style={{ color: "var(--accent)" }}>en cours de création</span>
             </p>
             <p className="font-mono text-xs mt-1" style={{ color: "var(--muted)" }}>
-              A <a href="https://digitalflowlabs.com" className="hover:underline" style={{ color: "#8a9ab5" }}>Digital Flow Labs</a> initiative · UK · {new Date().getFullYear()}
+              A <span style={{ color: "#8a9ab5" }}>Digital Flow Labs</span> initiative · UK · {new Date().getFullYear()}
             </p>
           </div>
           <p className="font-mono text-xs" style={{ color: "var(--muted)" }}>
