@@ -5,7 +5,7 @@ export default function Home() {
       {/* Top bar */}
       <div className="border-b px-8 py-4 flex items-center justify-between" style={{ borderColor: "var(--border)" }}>
         <span className="font-mono text-xs tracking-widest uppercase" style={{ color: "var(--muted)" }}>
-          Digital Flow Labs
+          SpectralFlow
         </span>
         <span className="font-mono text-xs tracking-widest uppercase" style={{ color: "var(--muted)" }}>
           spectralflow.ai
@@ -18,26 +18,29 @@ export default function Home() {
         <div className="mb-3">
           <span
             className="font-mono text-xs tracking-widest uppercase px-2 py-1 rounded"
-            style={{ color: "var(--accent)", border: "1px solid var(--accent)", opacity: 0.8 }}
+            style={{ color: "var(--accent)", border: "1px solid var(--accent)", backgroundColor: "rgba(0, 229, 255, 0.1)", opacity: 0.9, textShadow: "0 0 10px rgba(0, 229, 255, 0.5)" }}
           >
-            Platform in development
+            Open access
           </span>
         </div>
 
         <h1
           className="text-5xl md:text-7xl font-semibold tracking-tight leading-tight mt-6 mb-8"
-          style={{ color: "var(--foreground)" }}
+          style={{ color: "var(--foreground)", textShadow: "0 0 30px rgba(255, 255, 255, 0.1)" }}
         >
           SpectralFlow
         </h1>
 
-        <p className="text-xl md:text-2xl leading-relaxed max-w-2xl mb-4" style={{ color: "#8a9ab5" }}>
+        <p className="text-xl md:text-2xl leading-relaxed max-w-2xl mb-4" style={{ color: "var(--muted)" }}>
           Quantum co-design platform for NV-center engineering.
         </p>
         <p className="text-base md:text-lg leading-relaxed max-w-2xl" style={{ color: "var(--muted)" }}>
           SpectralFlow enables researchers and engineers to model, simulate and optimize
           NV-center spin coherence — from surface passivation to CPMG pulse sequences —
           entirely from a web interface.
+        </p>
+        <p className="font-mono text-xs tracking-widest uppercase mt-6" style={{ color: "var(--accent)", opacity: 0.7 }}>
+          8-channel decoherence model · 34 experimental anchors · Falsifiable predictions
         </p>
 
         {/* Divider */}
@@ -49,7 +52,7 @@ export default function Home() {
             <p className="font-mono text-xs tracking-widest uppercase mb-4" style={{ color: "var(--accent)" }}>
               Academic
             </p>
-            <p className="text-sm leading-7" style={{ color: "#8a9ab5" }}>
+            <p className="text-sm leading-7" style={{ color: "var(--muted)" }}>
               Design and validate NV-center experiments before going to the lab.
               Predict T₂ coherence times, test spectral noise engineering hypotheses,
               and generate falsifiable experimental protocols.
@@ -59,7 +62,7 @@ export default function Home() {
             <p className="font-mono text-xs tracking-widest uppercase mb-4" style={{ color: "var(--accent)" }}>
               Industrial
             </p>
-            <p className="text-sm leading-7" style={{ color: "#8a9ab5" }}>
+            <p className="text-sm leading-7" style={{ color: "var(--muted)" }}>
               Accelerate development of quantum sensors for precision metrology,
               semiconductor characterization and quantum processing units.
               Co-design material parameters against sensing performance.
@@ -72,7 +75,7 @@ export default function Home() {
           <a
             href="https://studio.spectralflow.ai"
             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded transition-opacity hover:opacity-80"
-            style={{ background: "var(--accent)", color: "#08090b" }}
+            style={{ background: "var(--accent)", color: "#05050A", boxShadow: "0 0 15px rgba(0, 229, 255, 0.4)" }}
           >
             Access the platform
             <span>→</span>
@@ -80,7 +83,7 @@ export default function Home() {
           <a
             href="mailto:alex@spectralflow.ai"
             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded transition-opacity hover:opacity-80"
-            style={{ border: "1px solid var(--border)", color: "#8a9ab5" }}
+            style={{ border: "1px solid var(--border)", color: "var(--muted)", backdropFilter: "blur(12px)" }}
           >
             Contact us
           </a>
@@ -92,14 +95,14 @@ export default function Home() {
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <p className="font-mono text-xs" style={{ color: "var(--muted)" }}>
-              SpectralFlow SAS — <span style={{ color: "var(--accent)" }}>en cours de création</span>
+              SpectralFlow — a <span style={{ color: "var(--accent)" }}>Digital Flow Labs</span> initiative
             </p>
             <p className="font-mono text-xs mt-1" style={{ color: "var(--muted)" }}>
-              A <span style={{ color: "#8a9ab5" }}>Digital Flow Labs</span> initiative · UK · {new Date().getFullYear()}
+              France · {new Date().getFullYear()}
             </p>
           </div>
           <p className="font-mono text-xs" style={{ color: "var(--muted)" }}>
-            Intellectual property protected · PCT filing in progress
+            Patent pending
           </p>
         </div>
       </footer>
