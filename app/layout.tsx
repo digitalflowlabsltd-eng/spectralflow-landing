@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "SpectralFlow — Quantum Co-Design Platform",
   description:
-    "SpectralFlow is a web-delivered quantum co-design platform for NV-center engineering. 8-channel decoherence model validated against 34 experimental anchors.",
+    "SpectralFlow is a quantum co-design platform for spin-defect engineering. 10-channel decoherence model validated against 57 experimental anchors across 4 material platforms.",
 };
 
 export default function RootLayout({

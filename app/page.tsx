@@ -32,42 +32,68 @@ export default function Home() {
         </h1>
 
         <p className="text-xl md:text-2xl leading-relaxed max-w-2xl mb-4" style={{ color: "var(--muted)" }}>
-          Quantum co-design platform for NV-center engineering.
+          Quantum co-design platform for spin-defect engineering.
         </p>
         <p className="text-base md:text-lg leading-relaxed max-w-2xl" style={{ color: "var(--muted)" }}>
           SpectralFlow enables researchers and engineers to model, simulate and optimize
-          NV-center spin coherence — from surface passivation to CPMG pulse sequences —
-          entirely from a web interface.
+          spin coherence across four material platforms — NV in diamond, V<sub>B</sub><sup>-</sup> in hBN,
+          V<sub>Si</sub> and PL6 in 4H-SiC — from surface passivation to dynamical decoupling
+          protocols (CPMG, XY-8, KDD), entirely from a web interface.
         </p>
         <p className="font-mono text-xs tracking-widest uppercase mt-6" style={{ color: "var(--accent)", opacity: 0.7 }}>
-          8-channel decoherence model · 34 experimental anchors · Falsifiable predictions
+          10-channel decoherence model &middot; 57 experimental anchors &middot; 5 UK patents pending &middot; Falsifiable predictions
         </p>
 
         {/* Divider */}
         <div className="my-12 h-px w-16" style={{ background: "var(--border)" }} />
 
-        {/* Two columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+        {/* Three columns */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <div>
             <p className="font-mono text-xs tracking-widest uppercase mb-4" style={{ color: "var(--accent)" }}>
-              Academic
+              Sensor Designer
             </p>
             <p className="text-sm leading-7" style={{ color: "var(--muted)" }}>
-              Design and validate NV-center experiments before going to the lab.
-              Predict T₂ coherence times, test spectral noise engineering hypotheses,
-              and generate falsifiable experimental protocols.
+              Design NV-diamond sensors before fabrication. 10-channel noise budget,
+              three falsifiable design rules (depth, diameter, density), global optimizer
+              with lock-and-optimize workflow. Nanodiamond and bulk diamond modes.
             </p>
           </div>
           <div>
             <p className="font-mono text-xs tracking-widest uppercase mb-4" style={{ color: "var(--accent)" }}>
-              Industrial
+              Simulate &amp; Compare
             </p>
             <p className="text-sm leading-7" style={{ color: "var(--muted)" }}>
-              Accelerate development of quantum sensors for precision metrology,
-              semiconductor characterization and quantum processing units.
-              Co-design material parameters against sensing performance.
+              Monte Carlo simulation across four quantum platforms.
+              Compare NV, hBN, SiC defects side by side.
+              Temperature sweeps, protocol optimization, spectral noise analysis.
             </p>
           </div>
+          <div>
+            <p className="font-mono text-xs tracking-widest uppercase mb-4" style={{ color: "var(--accent)" }}>
+              Validated Physics
+            </p>
+            <p className="text-sm leading-7" style={{ color: "var(--muted)" }}>
+              Every prediction is traceable. 57 experimental anchors from 30+ publications.
+              Cambria T<sub>1</sub> model (2023), Park CCE spectral diffusion (2025),
+              Han spin-lattice channel (2025). R<sup>2</sup> = 0.953.
+            </p>
+          </div>
+        </div>
+
+        {/* Key numbers */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+          {[
+            { value: "10", label: "Decoherence channels" },
+            { value: "57", label: "Calibration anchors" },
+            { value: "4", label: "Material platforms" },
+            { value: "5", label: "Patents pending" },
+          ].map((stat) => (
+            <div key={stat.label}>
+              <p className="text-3xl font-semibold" style={{ color: "var(--accent)" }}>{stat.value}</p>
+              <p className="font-mono text-xs mt-1" style={{ color: "var(--muted)" }}>{stat.label}</p>
+            </div>
+          ))}
         </div>
 
         {/* CTA */}
@@ -77,15 +103,15 @@ export default function Home() {
             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded transition-opacity hover:opacity-80"
             style={{ background: "var(--accent)", color: "#05050A", boxShadow: "0 0 15px rgba(0, 229, 255, 0.4)" }}
           >
-            Access the platform
-            <span>→</span>
+            Open SpectralFlow Studio
+            <span>&rarr;</span>
           </a>
           <a
             href="mailto:alex@spectralflow.ai"
             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded transition-opacity hover:opacity-80"
             style={{ border: "1px solid var(--border)", color: "var(--muted)", backdropFilter: "blur(12px)" }}
           >
-            Contact us
+            Contact
           </a>
         </div>
       </section>
@@ -95,14 +121,14 @@ export default function Home() {
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <p className="font-mono text-xs" style={{ color: "var(--muted)" }}>
-              SpectralFlow — a <span style={{ color: "var(--accent)" }}>Digital Flow Labs</span> initiative
+              SpectralFlow &mdash; Spectral Flow SAS (in formation)
             </p>
             <p className="font-mono text-xs mt-1" style={{ color: "var(--muted)" }}>
-              France · {new Date().getFullYear()}
+              France &middot; {new Date().getFullYear()}
             </p>
           </div>
           <p className="font-mono text-xs" style={{ color: "var(--muted)" }}>
-            Patent pending
+            5 UK patents pending &middot; GB2604407.3 &ndash; GB2606382.6
           </p>
         </div>
       </footer>
