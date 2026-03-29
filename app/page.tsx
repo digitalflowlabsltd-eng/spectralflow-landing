@@ -20,7 +20,7 @@ export default function Home() {
             className="font-mono text-xs tracking-widest uppercase px-2 py-1 rounded"
             style={{ color: "var(--accent)", border: "1px solid var(--accent)", backgroundColor: "rgba(0, 229, 255, 0.1)", opacity: 0.9, textShadow: "0 0 10px rgba(0, 229, 255, 0.5)" }}
           >
-            Open access
+            12 UK patents filed
           </span>
         </div>
 
@@ -32,16 +32,15 @@ export default function Home() {
         </h1>
 
         <p className="text-xl md:text-2xl leading-relaxed max-w-2xl mb-4" style={{ color: "var(--muted)" }}>
-          Quantum co-design platform for spin-defect engineering.
+          Quantum coherence is no longer a trial-and-error chemistry problem.
         </p>
         <p className="text-base md:text-lg leading-relaxed max-w-2xl" style={{ color: "var(--muted)" }}>
-          SpectralFlow enables researchers and engineers to model, simulate and optimize
-          spin coherence across four material platforms — NV in diamond, V<sub>B</sub><sup>-</sup> in hBN,
-          V<sub>Si</sub> and PL6 in 4H-SiC — from surface passivation to dynamical decoupling
-          protocols (CPMG, XY-8, KDD), entirely from a web interface.
+          SpectralFlow predicts T<sub>2</sub>, T<sub>1</sub>, gate fidelity, and sensitivity
+          from first principles — before you enter the cleanroom.
+          Four material platforms, three application verticals, one engine.
         </p>
         <p className="font-mono text-xs tracking-widest uppercase mt-6" style={{ color: "var(--accent)", opacity: 0.7 }}>
-          10-channel decoherence model &middot; 57 experimental anchors &middot; 5 UK patents pending &middot; Falsifiable predictions
+          17+ decoherence channels &middot; 80 experimental anchors &middot; R² = 0.953 &middot; 1.3 K – 600 K
         </p>
 
         {/* Divider */}
@@ -51,32 +50,32 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <div>
             <p className="font-mono text-xs tracking-widest uppercase mb-4" style={{ color: "var(--accent)" }}>
-              Sensor Designer
+              Before fabrication
             </p>
             <p className="text-sm leading-7" style={{ color: "var(--muted)" }}>
-              Design NV-diamond sensors before fabrication. 10-channel noise budget,
-              three falsifiable design rules (depth, diameter, density), global optimizer
-              with lock-and-optimize workflow. Nanodiamond and bulk diamond modes.
+              Lock your constraints, run the optimizer, get a fabrication spec.
+              17+ channel noise budget, three falsifiable design rules, CPMG/XY-8/KDD optimizer.
+              Every failed run you skip is six weeks and €30k saved.
             </p>
           </div>
           <div>
             <p className="font-mono text-xs tracking-widest uppercase mb-4" style={{ color: "var(--accent)" }}>
-              Simulate &amp; Compare
+              Full-stack physics
             </p>
             <p className="text-sm leading-7" style={{ color: "var(--muted)" }}>
-              Monte Carlo simulation across four quantum platforms.
-              Compare NV, hBN, SiC defects side by side.
-              Temperature sweeps, protocol optimization, spectral noise analysis.
+              From single NV coherence to QPU gate fidelity and entanglement routing.
+              XZZX bias-optimised QEC with &minus;95% overhead.
+              Peltier 250&thinsp;K sweet spot. One engine, three verticals: sensing, computing, networking.
             </p>
           </div>
           <div>
             <p className="font-mono text-xs tracking-widest uppercase mb-4" style={{ color: "var(--accent)" }}>
-              Validated Physics
+              Citable, not black-box
             </p>
             <p className="text-sm leading-7" style={{ color: "var(--muted)" }}>
-              Every prediction is traceable. 57 experimental anchors from 30+ publications.
-              Cambria T<sub>1</sub> model (2023), Park CCE spectral diffusion (2025),
-              Han spin-lattice channel (2025). R<sup>2</sup> = 0.953.
+              Every number has a reference. 80 anchors from 30+ publications, R<sup>2</sup>&thinsp;=&thinsp;0.953.
+              Predictions you can put in a grant application or a PRL submission.
+              When the model is approximate, we say so.
             </p>
           </div>
         </div>
@@ -84,10 +83,10 @@ export default function Home() {
         {/* Key numbers */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {[
-            { value: "10", label: "Decoherence channels" },
-            { value: "57", label: "Calibration anchors" },
-            { value: "4", label: "Material platforms" },
-            { value: "5", label: "Patents pending" },
+            { value: "17+", label: "Decoherence channels" },
+            { value: "80",  label: "Calibration anchors" },
+            { value: "4",   label: "Material platforms" },
+            { value: "12",  label: "Patents filed in 12 months" },
           ].map((stat) => (
             <div key={stat.label}>
               <p className="text-3xl font-semibold" style={{ color: "var(--accent)" }}>{stat.value}</p>
@@ -121,14 +120,14 @@ export default function Home() {
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <p className="font-mono text-xs" style={{ color: "var(--muted)" }}>
-              SpectralFlow &mdash; Spectral Flow SAS (in formation)
+              SpectralFlow SAS &mdash; France
             </p>
             <p className="font-mono text-xs mt-1" style={{ color: "var(--muted)" }}>
-              France &middot; {new Date().getFullYear()}
+              {new Date().getFullYear()}
             </p>
           </div>
           <p className="font-mono text-xs" style={{ color: "var(--muted)" }}>
-            5 UK patents pending &middot; GB2604407.3 &ndash; GB2606382.6
+            12 UK patents filed &middot; GB2604407.3 &ndash; GB2607023.5
           </p>
         </div>
       </footer>

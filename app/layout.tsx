@@ -15,7 +15,22 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "SpectralFlow — Quantum Co-Design Platform",
   description:
-    "SpectralFlow is a quantum co-design platform for spin-defect engineering. 10-channel decoherence model validated against 57 experimental anchors across 4 material platforms.",
+    "Predict T₂, gate fidelity, and sensitivity before you enter the cleanroom. 17+ channel decoherence model · 80 experimental anchors · 12 UK patents filed.",
+  openGraph: {
+    title: "SpectralFlow — Quantum Co-Design Platform",
+    description:
+      "Predict T₂, gate fidelity, and sensitivity before you enter the cleanroom. 17+ channel decoherence model · 80 experimental anchors · 12 UK patents filed.",
+    url: "https://spectralflow.ai",
+    siteName: "SpectralFlow",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "SpectralFlow — Quantum Co-Design Platform",
+    description:
+      "Predict T₂, gate fidelity, and sensitivity before you enter the cleanroom. 17+ channel decoherence model · 80 experimental anchors · 12 UK patents filed.",
+  },
 };
 
 export default function RootLayout({
